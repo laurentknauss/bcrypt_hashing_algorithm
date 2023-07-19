@@ -23,4 +23,18 @@ A basic Go program to generate a bcrypt hash value from  random words in the cli
 	a printable string.  The base64 encoding scheme makes it easier to store and compare bcrypt 
 	hashes.
 	The length of a bcrypt hash is usually 60 characters when encoded in base64.  
-	
+
+ 
+For example, a bcrypt hash might look something like this (note that the actual value will vary each time the code is run):
+
+
+`$2a$10$eoa9l1DqC8Y3v9.h1OJRTeSJoZ4m8Cw2VhsMmC34oNlyin9G47DSa`
+
+Breaking down the components:
+
+$2a$: This prefix indicates the bcrypt algorithm version used (2a in this case, which is the current version).
+10$: This indicates the cost factor used for key derivation.
+eoa9l1DqC8Y3v9.h1OJRTe: This part represents the salt used for hashing.
+SJoZ4m8Cw2VhsMmC34oNlyin9G47DSa: The actual hash value.
+When verifying a bcrypt hash, the bcrypt library automatically extracts the necessary information from the hash to perform the verification process correctly. The bcrypt.CompareHashAndPassword function in Go, for example, is used to compare a plain text password with a bcrypt hash during the authentication process.
+ 
