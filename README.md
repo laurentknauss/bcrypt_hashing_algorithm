@@ -40,9 +40,8 @@ eoa9l1DqC8Y3v9.h1OJRTe: This part represents the salt used for hashing.
 
 SJoZ4m8Cw2VhsMmC34oNlyin9G47DSa: The actual hash value.
 
-When verifying a bcrypt hash, the bcrypt library automatically extracts the necessary information from the hash to perform the verification process correctly. The bcrypt.CompareHashAndPassword function in Go, for example, is used to compare a plain text password with a bcrypt hash during the authentication process.
 
-In bcrypt, the generated hash for the same input (e.g., the same name) will not be the same each time due to the inclusion of a random salt during the hashing process. The use of a salt is a critical security feature in password hashing, as it helps prevent the use of precomputed tables (rainbow tables) for reversing the hash back to the original password.
+**In bcrypt, the generated hash for the same input (e.g., the same name) will not be the same each time due to the inclusion of a random salt during the hashing process. The use of a salt is a critical security feature in password hashing, as it helps prevent the use of precomputed tables (rainbow tables) for reversing the hash back to the original password.**
 
 
  
