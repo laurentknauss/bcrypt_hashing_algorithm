@@ -41,7 +41,7 @@ eoa9l1DqC8Y3v9.h1OJRTe: This part represents the salt used for hashing.
 SJoZ4m8Cw2VhsMmC34oNlyin9G47DSa: The actual hash value.
 
 
-**In bcrypt, the generated hash for the same input (e.g., the same name) will not be the same each time due to the inclusion of a random salt during the hashing process. The use of a salt is a critical security feature in password hashing, as it helps prevent the use of precomputed tables (rainbow tables) for reversing the hash back to the original password.**
+**In bcrypt, the generated hash for the same input (e.g., the same password)  will not be the same each time due to the inclusion of a random salt during the hashing process. The use of a salt is a critical security feature in password hashing, as it helps prevent the use of precomputed tables (rainbow tables) for reversing the hash back to the original password.**
 
 
  
