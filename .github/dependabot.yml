@@ -1,1 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "go-mod" # or any other ecosystem like "npm", "maven", etc.
+    directory: "/" # location of the package manifest
+    schedule:
+      interval: "weekly" # or "daily", "monthly"
 
